@@ -53,3 +53,28 @@
 .rock img {
   transform: scale(0.8);
 }
+
+@media screen and (max-width: 768px) {
+  .paper,
+  .scissors,
+  .rock {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .tools {
+    width: 25rem;
+    height: 17rem;
+  }
+
+  .triangle {
+    height: 10rem;
+    width: 14rem;
+  }
+
+  .paper img,
+  .scissors img,
+  .rock img {
+    transform: scale(1.2);
+  }
+}

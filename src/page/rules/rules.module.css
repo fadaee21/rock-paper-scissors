@@ -1,4 +1,3 @@
-
 .rulesButton {
   color: #fff;
   font-size: 1rem;
@@ -12,4 +11,11 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .rulesButton {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }

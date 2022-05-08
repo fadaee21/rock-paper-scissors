@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2.5rem;
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
   border: 2px solid var(--Header-Outline);
   width: 50%;
   margin-left: auto;
@@ -40,4 +40,30 @@
 .score > li:nth-child(2) {
   font-size: 4rem;
   line-height: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    width: 85%;
+    padding: 0rem 1rem;
+  }
+  .title > li {
+    font-size: 1.5rem;
+  }
+  .score > li:nth-child(2) {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
+  .score > li:nth-child(1) {
+    font-size: 0.7rem;
+  }
+  .score {
+    padding: 1rem 1.3rem;
+    height: 4.5rem;
+  }
+  .title {
+    height: 5.5rem;
+  }
 }
