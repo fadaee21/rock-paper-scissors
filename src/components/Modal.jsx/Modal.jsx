@@ -4,7 +4,7 @@ import imageRules from '../../assets/images/image-rules.svg'
 import iconClose from '../../assets/images/icon-close.svg'
 export const Modal = ({ modal, setModal }) => {
     return (
-        <div className={[styles.rulesContent, (modal ? styles.show : [])].join(" ")} >
+        <section className={[styles.rulesContent, (modal ? styles.show : [])].join(" ")} >
             <div className={styles.rules} >
                 <div className={styles.iconClose}>
                     <p>rules</p>
@@ -12,6 +12,6 @@ export const Modal = ({ modal, setModal }) => {
                 </div>
                 <img className={styles.ImageRules} src={imageRules} alt="" />
             </div>
-        </div>
+        </section>
     )
 }

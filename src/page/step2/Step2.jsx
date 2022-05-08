@@ -50,14 +50,13 @@ export const Step2 = () => {
     [computer]
   )
 
-
   useEffect(() => {
     userImageCalc()
     computerImageCalc()
   }, [userImageCalc, computerImageCalc])
 
   return (
-    <div className={styles.result}>
+    <section className={styles.result}>
       <div className={[styles.user,
       (win === 1 ? styles.winnerHeart : [])].join(" ")}>
         <p>you picked</p>
@@ -86,6 +85,6 @@ export const Step2 = () => {
           <img src={computerImage} alt="computer choice" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -10,14 +10,7 @@ import { Link } from 'react-router-dom'
 
 export const Step1 = () => {
 
-  const { user, computer, challengeHandle } = useGlobalContext()
-
-
-
-
-  console.log("user:", user, "computer:", computer)
-
-
+  const { challengeHandle } = useGlobalContext()
 
   return (
     <div className={styles.step1} >
