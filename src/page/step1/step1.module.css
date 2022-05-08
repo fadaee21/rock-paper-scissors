@@ -1,0 +1,55 @@
+.step1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+}
+
+.triangle {
+  height: 15rem;
+  width: 22rem;
+}
+
+.tools {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  width: 30rem;
+  height: 25rem;
+}
+
+.paper,
+.scissors,
+.rock {
+  border: 1.2rem solid transparent;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 10px 5px inset rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.paper {
+  /* border-image:var(--Paper-Gradient); */
+  border-color: hsl(230, 89%, 62%);
+}
+.scissors {
+  /* border: 1.2rem solid var(--Scissors-Gradient); */
+  border-color: hsl(39, 89%, 49%);
+}
+.rock {
+  border-color: hsl(349, 71%, 52%);
+  /* border: 1.2rem solid var(--Rock-Gradient); */
+}
+
+.paper img,
+.scissors img,
+.rock img {
+  scale: 0.8;
+}

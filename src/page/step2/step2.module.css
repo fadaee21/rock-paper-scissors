@@ -1,0 +1,138 @@
+.result {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+
+}
+
+.result p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.user,
+.computer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.computer {
+  animation: computerAni 1s;
+}
+
+@keyframes computerAni {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.paper {
+  /* border-image:var(--Paper-Gradient); */
+  border-color: hsl(230, 89%, 62%) !important;
+}
+.scissors {
+  /* border: 1.2rem solid var(--Scissors-Gradient); */
+  border-color: hsl(39, 89%, 49%) !important;
+}
+.rock {
+  border-color: hsl(349, 71%, 52%) !important;
+  /* border: 1.2rem solid var(--Rock-Gradient); */
+}
+
+.selected {
+  border: 2rem solid transparent;
+  border-radius: 50%;
+  padding: 1.5rem;
+  width: 17rem;
+  height: 17rem;
+  background-color: #fff;
+  box-shadow: 0 10px 5px inset rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
+}
+
+.selected img {
+  scale: 0.6;
+}
+
+.state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 14rem;
+  font-weight: 700;
+  animation: winnerState 3s ease-in;
+}
+
+@keyframes winnerState {
+  0% {
+    scale: 0;
+    transform: rotate(270deg);
+  }
+  80% {
+    transform: rotate(0);
+
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.state p {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.state button {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--Dark-Text);
+  background-color: #fff;
+  outline: none;
+  border: 2px solid #555;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.winnerHeart::after {
+  content: " ";
+  width: 25rem;
+  height: 25rem;
+  background-color: hsla(228, 25%, 31%, 0.5);
+  border: 70px solid hsl(229, 25%, 31%), 0.3;
+  outline: 70px solid hsl(229, 25%, 31%, 0.15);
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  transform: translateY(4%);
+  animation: winnerHeartAni 4s ease-out infinite;
+}
+@keyframes winnerHeartAni {
+  0% {
+    background-color: hsl(229, 25%, 31%, 0);
+    border: 0px solid hsl(229, 25%, 31%, 0);
+    outline: 0px solid hsl(229, 25%, 31%, 0);
+  }
+  80% {
+    background-color: hsla(228, 25%, 31%, 0.5);
+    border: 70px solid hsl(229, 25%, 31%), 0.3;
+    outline: 70px solid hsl(229, 25%, 31%, 0.15);
+  }
+  100% {
+    background-color: hsl(229, 25%, 31%, 0);
+    border: 0px solid hsl(229, 25%, 31%, 0);
+    outline: 0px solid hsl(229, 25%, 31%, 0);
+  }
+}
