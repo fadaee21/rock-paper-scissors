@@ -33,16 +33,19 @@
 }
 
 .paper {
-  /* border-image:var(--Paper-Gradient); */
   border-color: hsl(230, 89%, 62%) !important;
+  box-shadow: 0px 8px 0px hsl(230deg 89% 40%),
+    inset 0px 8px 0px rgb(70 70 70 / 25%) !important ;
 }
 .scissors {
-  /* border: 1.2rem solid var(--Scissors-Gradient); */
   border-color: hsl(39, 89%, 49%) !important;
+  box-shadow: 0px 8px 0px hsl(40deg 84% 40%),
+    inset 0px 8px 0px rgb(70 70 70 / 25%) !important ;
 }
 .rock {
   border-color: hsl(349, 71%, 52%) !important;
-  /* border: 1.2rem solid var(--Rock-Gradient); */
+  box-shadow: 0px 8px 0px hsl(349deg 70% 35%),
+    inset 0px 8px 0px rgb(70 70 70 / 25%) !important ;
 }
 
 .selected {
@@ -52,7 +55,6 @@
   width: 17rem;
   height: 17rem;
   background-color: #fff;
-  box-shadow: 0 10px 5px inset rgba(0, 0, 0, 0.4);
   margin-top: 2rem;
 }
 
