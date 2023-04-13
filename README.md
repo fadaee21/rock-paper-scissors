@@ -1,7 +1,4 @@
-<h3>score state will handle by useContext</h3>
-<h3>styles are pure css modular</h3>
-
-<h5>Developed a web-based game using React, HTML, CSS, and JavaScript. The game allows users to play against the computer and choose between rock, paper, or scissors. The game logic is implemented using React, and the user interface is designed using HTML, CSS, and JavaScript. The game is fully responsive and can be played on any device. I deployed the game using netlify Pages, and it has received positive feedback from users.</h5>
+<h5>Developed a web-based game using React, HTML, CSS, and JavaScript. The game allows users to play against the computer and choose between rock, paper, or scissors. The game logic is implemented using React, and the user interface is designed using HTML, CSS, and JavaScript.score state will handle by useContext. The game is fully responsive and can be played on any device. I deployed the game using netlify Pages, and it has received positive feedback from users.</h5>
 <link>https://fadgame.netlify.app/</link>
 
 
